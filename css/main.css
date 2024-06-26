@@ -1,0 +1,222 @@
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: "Pretendard";
+}
+
+.header{
+    width: auto;
+    padding-top: 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    font-family: "Pretnedard";
+    font-size: 40px;
+    margin-left: 20px;
+}
+.siteName{
+    
+    font-size: 36px;
+    position: relative;
+    top: -4px;
+    font-weight: 400;
+}
+
+.menus{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    gap: 50px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 50px;
+}
+.menu{
+    width: 100px;
+    height: 40px;
+    transition: 0.2s all;
+    font-weight: 400;
+    cursor: pointer;
+}
+.menu:hover{
+    color: gray;
+}
+
+.mainImage{
+    width: 100%;
+    height: 400px;
+
+    margin: 0px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    
+    background-image: url(https://odatacolocation.com/wp-content/uploads/2021/12/shutterstock_1929852050-scaled.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.mainInfo{
+    color: white;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 43%;
+    left: 90px;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+
+}
+.mainTitle{
+    font-size: 70px;
+    font-weight: 400;
+}
+.mainSub{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.mainBtn{
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.mainBtn:hover{ 
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 1);
+}
+
+.wrapperService{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 23%);
+    gap:38px;
+    margin: 10px;
+}
+.imageService{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.imageService:hover{
+    filter: brightness(50%);
+    transition: 0.3s all;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+.imageService:hover .overlay{
+    opacity: 1;
+}
+.wrapTitle{
+    color: rgb(0, 0, 0);
+    margin-left: 12px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap:38px;
+    
+}
+
+.item{
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+.image{
+    background-size: cover;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+}
+.itemTitle{
+    margin-top: 10px;
+    font-size: 24px;
+}
+.itemPrice{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color:rgb(157, 157, 157);
+    }
+}
+.Jobsinsa{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color:white;
+    }
+}
+
+@media (max-width: 700px) {
+    body{
+        overflow-x: hidden;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100%);
+        gap: 38px;
+        margin: 10px;    
+    }
+    .wrapperService{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100%);
+        gap:38px;
+        margin: 10px;
+    }
+    .itemDesp{
+        width: 93%;
+    }
+    .image{
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 200px;
+    }
+    .mainImage{
+        height: 300px;
+    }
+    .mainInfo{
+        color: white;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 43%;
+        left: 15px;
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+        padding: 30px;
+    }
+    .mainTitle{
+        font-size: 50px;
+    }
+    .mainSub{
+        font-size: 30px;
+    }
+}
